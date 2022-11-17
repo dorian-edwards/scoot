@@ -1,16 +1,16 @@
 import Head from 'next/head'
 import Layout from '../components/Layout'
 
-import HomePage from '../components/HomePage'
+import Home from '../components/Home'
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Head>
         <title>Home</title>
       </Head>
       <Layout>
-        <HomePage />
+        <Home />
       </Layout>
     </>
   )

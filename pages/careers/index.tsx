@@ -1,16 +1,15 @@
 import Head from 'next/head'
+import Careers from '../../components/Careers'
 import Layout from '../../components/Layout'
 
-import About from '../../components/About'
-
-export default function AboutPage() {
+export default function CareerPage() {
   return (
     <>
       <Head>
-        <title>About</title>
+        <title>Careers</title>
       </Head>
       <Layout>
-        <About />
+        <Careers />
       </Layout>
     </>
   )

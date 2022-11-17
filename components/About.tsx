@@ -1,24 +1,21 @@
 import data from '../public/data.json'
-import AboutCard from './AboutCard'
 import ValueCard from './ValueCard'
 import FaqDropdown from './FaqDropdown'
 import SubHeading from './Typography/Subheading'
+import Banner from './Banner'
+import Feature from './Feature'
 
 export default function About() {
   return (
     <>
-      <header className='bg-about-mobile mb-[72px]'>
-        <h2 className='font-space text-[40px] text-center text-white leading-10 tracking-[-1.79px] px-8 py-[60px]'>
-          About
-        </h2>
-      </header>
+      <Banner text='About' bgImage='bg-about-mobile' />
       <main>
         <section
           id='about'
           className='about-card-wrapper flex flex-col gap-y-[120px] mb-[120px]'
         >
           {data['about-cards'].map((entry) => (
-            <AboutCard
+            <Feature
               key={entry.id}
               title={entry.title}
               description={entry.description}

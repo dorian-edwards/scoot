@@ -13,6 +13,12 @@ module.exports = {
       'about-mobile': 'url(/assets/images/about-hero-mobile.jpg)',
       'about-tablet': 'url(/assets/images/about-hero-tablet.jpg)',
       'about-desktop': 'url(/assets/images/about-hero-desktop.jpg)',
+      'careers-location-mobile':
+        'url(/assets/images/careers-location-hero-mobile.jpg)',
+      'careers-location-tablet':
+        'url(/assets/images/careers-location-hero-tablet.jpg)',
+      'careers-location-desktop':
+        'url(/assets/images/careers-location-hero-desktop.jpg)',
     },
     colors: {
       white: '#FFF',

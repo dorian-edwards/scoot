@@ -1,13 +1,28 @@
-export interface HeadingProps {
-  children: string
-  type: number
-  color?: string
+export interface BannerProps {
+  text: string
+  bgImage: string
+  styling?: string
 }
 
 export interface ButtonProps {
   text: string
   type?: 'button' | 'submit' | 'reset' | undefined
   styling?: string
+}
+
+export interface FeatureProps {
+  title: string
+  description: string
+  image: string
+  alt: string
+  pattern?: string
+  position?: string
+}
+
+export interface HeadingProps {
+  children: string
+  type: number
+  color?: string
 }
 
 export interface MobileSideNavProps {
@@ -19,13 +34,4 @@ export interface OverviewProps {
   description: string
   icon: string
   alt: string
-}
-
-export interface AboutCardProps {
-  title: string
-  description: string
-  image: string
-  alt: string
-  arrow?: string
-  position?: string
 }
