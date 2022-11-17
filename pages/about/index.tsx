@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Layout from '../components/Layout'
+import Layout from '../../components/Layout'
 
-import HomePage from '../components/HomePage'
+import About from '../../components/About'
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
         <title>Home</title>
       </Head>
       <Layout>
-        <HomePage />
+        <About />
       </Layout>
     </>
   )

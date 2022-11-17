@@ -1,0 +1,95 @@
+{
+  "how-to": [
+    {
+      "id": "hwt-1",
+      "title": "Locate with app",
+      "description": "Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. ",
+      "icon": "/assets/icons/locate.svg",
+      "alt": "hand using mobile device"
+    },
+    {
+      "id": "hwt-2",
+      "title": "Pick your scooter",
+      "description": "We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost.",
+      "icon": "/assets/icons/scooter.svg",
+      "alt": "empty scooter"
+    },
+    {
+      "id": "hwt-3",
+      "title": "Enjoy the ride",
+      "description": "Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps.",
+      "icon": "/assets/icons/ride.svg",
+      "alt": "scooter with a rider"
+    }
+  ],
+  "features": [
+    {
+      "id": "feat-1",
+      "title": "Easy to use riding telemetry",
+      "description": "The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all in an easy to use app.",
+      "image": "/assets/images/telemetry.jpg",
+      "alt": "woman holding a phone",
+      "pattern": ""
+    },
+    {
+      "id": "feat-2",
+      "title": "Coming to a city near you",
+      "description": "Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming year.",
+      "image": "/assets/images/near-you.jpg",
+      "alt": "shot of city street",
+      "pattern": ""
+    },
+    {
+      "id": "feat-3",
+      "title": "Zero hassle payments",
+      "description": "Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a month.",
+      "image": "/assets/images/payments.jpg",
+      "alt": "person taking money from wallet",
+      "pattern": ""
+    }
+  ],
+  "about-cards": [
+    {
+      "id": "ab-1",
+      "title": "Mobility for the digital era",
+      "description": "Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost, smart access to scooters at your fingertips.",
+      "image": "/assets/images/digital-era.jpg",
+      "alt": "overshoulder view of woman on a cell phone",
+      "arrow": "/assets/images/digital-era.jpg"
+    },
+    {
+      "id": "ab-2",
+      "title": "Better urban living",
+      "description": "We’re helping connect cities and bring people closer together. Our scooters are also fully-electric and we offset the minimal carbon footprint for each ride.",
+      "image": "/assets/images/better-living.jpg",
+      "alt": "blurred image of trains running",
+      "arrow": "/assets/images/digital-era.jpg"
+    }
+  ],
+  "values": [
+    {
+      "id": "val-1",
+      "title": "Our tech",
+      "description": "We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!",
+      "image": "/assets/images/our-tech.jpg",
+      "alt": "hand holding mobile device",
+      "number": "01"
+    },
+    {
+      "id": "val-2",
+      "title": "Our integrity",
+      "description": "We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in every city we serve.",
+      "image": "/assets/images/our-integrity.jpg",
+      "alt": "aerial view of person on a moped",
+      "number": "02"
+    },
+    {
+      "id": "val-3",
+      "title": "Our community",
+      "description": "We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees.",
+      "image": "/assets/images/our-community.jpg",
+      "alt": "people on a city street",
+      "number": "03"
+    }
+  ]
+}
