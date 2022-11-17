@@ -29,7 +29,7 @@ export default function About() {
         </section>
         <section id='values' className='flex flex-col gap-y-16 mb-[145px]'>
           <SubHeading styling='mb-16'>Our values</SubHeading>
-          {data['values'].map((entry) => (
+          {data.values.map((entry) => (
             <ValueCard
               key={entry.id}
               id={entry.id}
@@ -42,7 +42,22 @@ export default function About() {
           ))}
         </section>
         <section id='faqs'>
-          <FaqDropdown />
+          <SubHeading styling='mb-12'>FAQs</SubHeading>
+          {data.faqs.map((entry) => (
+            <div key={entry.id} className='faq-wrapper mb-12'>
+              <h3 className='font-space text-[24px] text-dark-navy text-center leading-7 tracking-[-1.07px] mb-8'>
+                {entry.heading}
+              </h3>
+              <div
+                key={entry.id}
+                className='faqs-wrapper flex flex-col gap-y-4'
+              >
+                {entry.entries.map((entry) => (
+                  <FaqDropdown key={entry.id} entry={entry} />
+                ))}
+              </div>
+            </div>
+          ))}
         </section>
       </main>
     </>

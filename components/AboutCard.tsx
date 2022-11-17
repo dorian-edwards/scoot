@@ -2,7 +2,7 @@ import Image from 'next/image'
 import SubHeading from './Typography/Subheading'
 import Paragraph from './Typography/Paragraph'
 
-import { AboutCardProps } from '../Interfaces/Interfaces'
+import { AboutCardProps } from '../interfaces/Interfaces'
 
 export default function AboutCard({
   title,

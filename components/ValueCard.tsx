@@ -20,7 +20,7 @@ export default function ValueCard({
   number,
 }: ValueCardProps) {
   return (
-    <div className='about-card'>
+    <div className='value-card'>
       <ShowcaseImage image={image} alt={alt} number={number} />
       <div className='text-wrapper w-[85%] w-max-[445px] mx-auto'>
         <TertiaryHeading>{title}</TertiaryHeading>

@@ -13,12 +13,18 @@ export default function ShowcaseImage({
 }: ShowCaseImageProps) {
   return (
     <div>
-      <div className='image-wrapper w-60 h-60 rounded-full overflow-hidden mx-auto'>
-        <Image src={image} alt={alt} width={240} height={240} />
+      <div className='image-wrapper w-60 h-60 rounded-full mx-auto mb-16 relative'>
+        <Image
+          className='rounded-full'
+          src={image}
+          alt={alt}
+          width={240}
+          height={240}
+        />
+        <span className='number-sticker font-space flex text-[24px] leading-7 tracking-[-1.07px] h-24 w-24 rounded-full bg-yellow justify-center items-center mx-auto absolute bottom-[-15%] left-[30%]'>
+          {number}
+        </span>
       </div>
-      <span className='font-space flex text-[24px] leading-7 tracking-[-1.07px] h-24 w-24 rounded-full bg-yellow justify-center items-center mx-auto relative bottom-[57.5px]'>
-        {number}
-      </span>
     </div>
   )
 }
