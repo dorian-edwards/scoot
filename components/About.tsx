@@ -2,7 +2,7 @@ import data from '../public/data.json'
 
 import ValueCard from './ValueCard'
 import FaqDropdown from './FaqDropdown'
-import SubHeading from './Typography/Subheading'
+import SubHeading from './Typography/SubHeading'
 import Banner from './Banner'
 import Feature from './Feature'
 

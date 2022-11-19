@@ -173,5 +173,23 @@
       "position": "UX Analyst",
       "location": "London, United Kingdom"
     }
+  ],
+  "locations": [
+    {
+      "id": "loc-1",
+      "city": "New York"
+    },
+    {
+      "id": "loc-2",
+      "city": "London"
+    },
+    {
+      "id": "loc-3",
+      "city": "Jakarta"
+    },
+    {
+      "id": "loc-4",
+      "city": "Yokohama"
+    }
   ]
 }

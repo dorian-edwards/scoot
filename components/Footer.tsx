@@ -36,7 +36,7 @@ export default function Footer() {
               <Link href='/about'>About</Link>
             </li>
             <li className='font-space text-dim-grey text-[15px] leading-[25px]'>
-              <Link href='/location'>Location</Link>
+              <Link href='/locations'>Location</Link>
             </li>
             <li className='font-space text-dim-grey text-[15px] leading-[25px]'>
               <Link href='/careers'>Careers</Link>

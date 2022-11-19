@@ -1,7 +1,7 @@
 import Banner from './Banner'
 import Feature from './Feature'
 import Button from './Button'
-import SubHeading from './Typography/Subheading'
+import SubHeading from './Typography/SubHeading'
 import ValueCard from './ValueCard'
 
 import data from '../public/data.json'

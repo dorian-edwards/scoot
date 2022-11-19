@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Button from './Button'
-import { MobileSideNavProps } from '../Interfaces/Interfaces'
+import { MobileSideNavProps } from '../interfaces/Interfaces'
 
 export default function MobileSideNav({ show }: MobileSideNavProps) {
   const unfreezeHtml = (): void => {
@@ -21,7 +21,7 @@ export default function MobileSideNav({ show }: MobileSideNavProps) {
           </Link>
         </li>
         <li>
-          <Link href='/location' onClick={unfreezeHtml}>
+          <Link href='/locations' onClick={unfreezeHtml}>
             Location
           </Link>
         </li>

@@ -19,6 +19,9 @@ module.exports = {
         'url(/assets/images/careers-location-hero-tablet.jpg)',
       'careers-location-desktop':
         'url(/assets/images/careers-location-hero-desktop.jpg)',
+      'world-mobile': 'url(/assets/images/world-map-mobile.png)',
+      'world-tablet': 'url(/assets/images/world-map-tablet.png)',
+      'world-desktop': 'url(/assets/images/world-map-desktop.png)',
     },
     colors: {
       white: '#FFF',
