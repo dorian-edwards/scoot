@@ -25,6 +25,11 @@ export interface HeadingProps {
   color?: string
 }
 
+export interface JobCardProps {
+  position: string
+  location: string
+}
+
 export interface MobileSideNavProps {
   show: boolean
 }

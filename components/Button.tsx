@@ -1,4 +1,4 @@
-import { ButtonProps } from '../Interfaces/Interfaces'
+import { ButtonProps } from '../interfaces/Interfaces'
 
 export default function Button({ text, type, styling }: ButtonProps) {
   return (

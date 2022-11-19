@@ -39,13 +39,15 @@ export default function HomePage() {
           className='flex flex-col gap-y-[120px] mb-[120px]'
         >
           {data['features'].map((entry) => (
-            <Feature
-              key={entry.id}
-              title={entry.title}
-              description={entry.description}
-              image={entry.image}
-              alt={entry.alt}
-            />
+            <div key={entry.id} className='home-feature-wrapper'>
+              <Feature
+                title={entry.title}
+                description={entry.description}
+                image={entry.image}
+                alt={entry.alt}
+              />
+              <Button text='Learn more' type='button' styling='mx-auto mt-8' />
+            </div>
           ))}
         </section>
       </main>

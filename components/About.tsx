@@ -1,4 +1,5 @@
 import data from '../public/data.json'
+
 import ValueCard from './ValueCard'
 import FaqDropdown from './FaqDropdown'
 import SubHeading from './Typography/Subheading'

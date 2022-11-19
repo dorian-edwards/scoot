@@ -135,5 +135,43 @@
         }
       ]
     }
+  ],
+  "careers": {
+    "image": "/assets/images/join-us.jpg",
+    "alt": "standing man holding tablet speaking to colleagues",
+    "title": "Care to join our mission?",
+    "description": "We’re always looking for ambitious individuals to help us on our journey. If you’re passionate about our mission to provide clean, accessible transport to improve urban living we want to hear from you!"
+  },
+  "positions": [
+    {
+      "id": "pos-1",
+      "position": "General Manager",
+      "location": "Jakarta, Indonesia"
+    },
+    {
+      "id": "pos-2",
+      "position": "UI/UX Designer",
+      "location": "Yokohama, Japan"
+    },
+    {
+      "id": "pos-3",
+      "position": "Blog Content Copywriter",
+      "location": "New York, United States"
+    },
+    {
+      "id": "pos-4",
+      "position": "Graphic Designer",
+      "location": "New York, United States"
+    },
+    {
+      "id": "pos-5",
+      "position": "Fleet Supervisor",
+      "location": "Jakarta, Indonesia"
+    },
+    {
+      "id": "pos-6",
+      "position": "UX Analyst",
+      "location": "London, United Kingdom"
+    }
   ]
 }
