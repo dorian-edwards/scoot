@@ -19,7 +19,7 @@ export default function About() {
       <main>
         <section
           id='about'
-          className='about-card-wrapper flex flex-col gap-y-[120px] mb-[120px]'
+          className='about-card-wrapper flex flex-col gap-y-[120px] mb-[120px] tablet:max-w-[557px] tablet:mx-auto'
         >
           {data['about-cards'].map((entry) => (
             <Feature
@@ -31,7 +31,10 @@ export default function About() {
             />
           ))}
         </section>
-        <section id='values' className='flex flex-col gap-y-16 mb-[145px]'>
+        <section
+          id='values'
+          className='flex flex-col gap-y-16 mb-[145px] tablet:max-w-[457px] tablet:mx-auto'
+        >
           <SubHeading styling='mb-16'>Our values</SubHeading>
           {data.values.map((entry) => (
             <ValueCard
@@ -45,7 +48,7 @@ export default function About() {
             />
           ))}
         </section>
-        <section id='faqs'>
+        <section id='faqs' className='tablet:max-w-[689px] tablet:mx-auto'>
           <SubHeading styling='mb-12'>FAQs</SubHeading>
           {data.faqs.map((entry) => (
             <div key={entry.id} className='faq-wrapper mb-12'>
