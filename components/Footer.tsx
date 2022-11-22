@@ -11,9 +11,9 @@ import Logo from './Logo'
 export default function Footer() {
   return (
     <footer className='relative'>
-      <div className='purchase-wrapper bg-dark-navy py-[88px]'>
+      <section className='purchase-wrapper bg-dark-navy py-[88px]'>
         <div className='container mx-auto'>
-          <h2 className='font-space text-[32px] text-white leading-[32px] tracking-[-1.43px] text-center mb-10'>
+          <h2 className='font-space text-[32px] text-white leading-[32px] tracking-[-1.43px] text-center mb-10 max-w-[457px] mx-auto tablet:text-[48px] tablet:leading-[48px] tablet:tracking-[-2.14px]'>
             Sign up and scoot off today
           </h2>
           <div className='purchase flex gap-x-[13px] justify-center'>
@@ -25,12 +25,12 @@ export default function Footer() {
             </button>
           </div>
         </div>
-      </div>
+      </section>
 
-      <nav className='footer-nav pt-16 pb-[88px] bg-menu-bg'>
-        <div className='container mx-auto'>
-          <ul className='local-nav flex flex-col items-center gap-y-4 mb-[85px]'>
-            <li className='mb-[25px]'>
+      <nav className='footer-nav pt-16 pb-[88px] bg-menu-bg tablet:px-10'>
+        <div className='container mx-auto tablet:flex tablet:justify-between'>
+          <ul className='local-nav flex flex-col items-center mobile:gap-y-4 mobile:mb-[85px] tablet:flex-row tablet:items-center tablet:gap-x-8'>
+            <li className='mobile:mb-[25px] tablet:mr-[26.58px]'>
               <Link href='/'>
                 <Logo color='#FFF' />
               </Link>
@@ -45,7 +45,7 @@ export default function Footer() {
               <Link href='/careers'>Careers</Link>
             </li>
           </ul>
-          <ul className='external-nav flex justify-center gap-x-6'>
+          <ul className='external-nav flex justify-center gap-x-6 items-center'>
             <li>
               <Link href='#'>
                 <Image src={facebook} alt='facebook logo' />
