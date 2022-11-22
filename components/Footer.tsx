@@ -11,8 +11,8 @@ import Logo from './Logo'
 export default function Footer() {
   return (
     <footer className='relative'>
-      <div className='container mx-auto'>
-        <div className='purchase-wrapper bg-dark-navy py-[88px]'>
+      <div className='purchase-wrapper bg-dark-navy py-[88px]'>
+        <div className='container mx-auto'>
           <h2 className='font-space text-[32px] text-white leading-[32px] tracking-[-1.43px] text-center mb-10'>
             Sign up and scoot off today
           </h2>
@@ -25,7 +25,10 @@ export default function Footer() {
             </button>
           </div>
         </div>
-        <nav className='footer-nav pt-16 pb-[88px] bg-menu-bg'>
+      </div>
+
+      <nav className='footer-nav pt-16 pb-[88px] bg-menu-bg'>
+        <div className='container mx-auto'>
           <ul className='local-nav flex flex-col items-center gap-y-4 mb-[85px]'>
             <li className='mb-[25px]'>
               <Link href='/'>
@@ -59,8 +62,8 @@ export default function Footer() {
               </Link>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </footer>
   )
 }

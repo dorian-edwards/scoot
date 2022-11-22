@@ -177,19 +177,23 @@
   "locations": [
     {
       "id": "loc-1",
-      "city": "New York"
+      "city": "New York",
+      "position": ""
     },
     {
       "id": "loc-2",
-      "city": "London"
+      "city": "London",
+      "position": ""
     },
     {
       "id": "loc-3",
-      "city": "Jakarta"
+      "city": "Jakarta",
+      "position": ""
     },
     {
       "id": "loc-4",
-      "city": "Yokohama"
+      "city": "Yokohama",
+      "position": ""
     }
   ]
 }

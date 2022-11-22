@@ -1,16 +1,21 @@
-import Banner from './Banner'
-import Feature from './Feature'
 import Button from './Button'
-import SubHeading from './Typography/SubHeading'
+import Feature from './Feature'
+import JobCard from './JobCard'
 import ValueCard from './ValueCard'
+import SubHeading from './Typography/SubHeading'
 
 import data from '../public/data.json'
-import JobCard from './JobCard'
 
 export default function Careers() {
   return (
     <>
-      <Banner text='Careers' bgImage='bg-careers-location-mobile' />
+      <header
+        className={`bg-careers-location-mobile tablet:bg-careers-location-tablet desktop:bg-careers-location-desktop mb-[72px] px-10`}
+      >
+        <h1 className='font-space text-[40px] text-center tablet:text-left max-w-[1100px] mx-auto text-white leading-10 tracking-[-1.79px] py-[60px] tablet:py-[72px] '>
+          Careers
+        </h1>
+      </header>
       <main>
         <section id='careers' className='mb-[120px]'>
           <Feature

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -27,12 +31,12 @@ a {
   }
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @layer components {
   .body-text {
     @apply font-lexend text-[15px] leading-[25px] text-dark-navy;
+  }
+
+  .yokohama {
+    @apply right-[6%] bottom-[73%] bg-overlay-black;
   }
 }

@@ -9,7 +9,13 @@ import Feature from './Feature'
 export default function About() {
   return (
     <>
-      <Banner text='About' bgImage='bg-about-mobile' />
+      <header
+        className={`bg-about-mobile tablet:bg-about-tablet desktop:bg-about-desktop mb-[72px] px-10`}
+      >
+        <h1 className='font-space text-[40px] text-center tablet:text-left max-w-[1100px] mx-auto text-white leading-10 tracking-[-1.79px] py-[60px] tablet:py-[72px] '>
+          About
+        </h1>
+      </header>
       <main>
         <section
           id='about'

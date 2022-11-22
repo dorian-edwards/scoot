@@ -41,7 +41,7 @@ module.exports = {
       space: ['Space Mono', 'monospace'],
     },
     screens: {
-      tablet: '700px',
+      tablet: '768px',
       desktop: '1440px',
     },
   },
