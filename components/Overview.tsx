@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { OverviewProps } from '../Interfaces/Interfaces'
+import { OverviewProps } from '../interfaces/Interfaces'
 
 export default function Overview({
   title,
@@ -8,23 +8,25 @@ export default function Overview({
   alt,
 }: OverviewProps) {
   return (
-    <div className='overview-wrapper px-8'>
+    <div className='overview-wrapper w-full px-8 tablet:flex tablet:gap-x-[79px] tablet:items-center tablet:max-w-[573px] tablet:mx-auto tablet:px-0'>
       <Image
-        className='mx-auto mb-6'
+        className='mx-auto mb-6 tablet:mx-0'
         src={icon}
         alt={alt}
         height={56}
         width={56}
       />
-      <h2
-        id='locate'
-        className='overview-title font-space text-center text-dark-navy text-[20px] leading-[28px] tracking-[-0.89px] mb-6'
-      >
-        {title}
-      </h2>
-      <p className='overview-description font-lexend text-dim-grey text-[15px] leading-[25px] text-center'>
-        {description}
-      </p>
+      <div className='text-wrapper tablet:max-w-[398px]'>
+        <h2
+          id='locate'
+          className='overview-title font-space text-center tablet:text-left text-dark-navy text-[20px] leading-[28px] tracking-[-0.89px] mb-6'
+        >
+          {title}
+        </h2>
+        <p className='overview-description font-lexend text-dim-grey text-[15px] leading-[25px] text-center tablet:text-left'>
+          {description}
+        </p>
+      </div>
     </div>
   )
 }

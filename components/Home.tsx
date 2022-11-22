@@ -8,15 +8,17 @@ import Feature from './Feature'
 export default function HomePage() {
   return (
     <>
-      <header className='header bg-home-mobile bg-no-repeat bg-cover bg-center min-h-[650px] tablet:bg-home-tablet pt-[115px] px-8 mb-[120px]'>
-        <PrimaryHeading>Scooter Sharing Made Simple</PrimaryHeading>
-        <p className='font-lexend text-[15px] leading-[25px] text-center text-white mb-[34px]'>
-          Scoot takes the hassle out of urban mobility. Our bikes are placed in
-          convenient locations in each of our cities. Use our app to locate the
-          nearest bike, unlock it with a tap, and you’re away!
-        </p>
-        <div className='button-wrapper flex justify-center'>
-          <Button text='Get Scootin' />
+      <header className='header bg-home-mobile bg-no-repeat bg-cover bg-center min-h-[650px] tablet:bg-home-tablet desktop:bg-home-desktop pt-[115px] px-8 mb-[120px]'>
+        <div className='tablet:max-w-[573px] tablet:mx-auto'>
+          <PrimaryHeading>Scooter Sharing Made Simple</PrimaryHeading>
+          <p className='font-lexend text-[15px] leading-[25px] text-center text-white mb-[34px]'>
+            Scoot takes the hassle out of urban mobility. Our bikes are placed
+            in convenient locations in each of our cities. Use our app to locate
+            the nearest bike, unlock it with a tap, and you’re away!
+          </p>
+          <div className='button-wrapper flex justify-center'>
+            <Button text='Get Scootin' />
+          </div>
         </div>
       </header>
       <main className='main'>
@@ -39,7 +41,10 @@ export default function HomePage() {
           className='flex flex-col gap-y-[120px] mb-[120px]'
         >
           {data['features'].map((entry) => (
-            <div key={entry.id} className='home-feature-wrapper'>
+            <div
+              key={entry.id}
+              className='home-feature-wrapper tablet:max-w-[573px] tablet:mx-auto'
+            >
               <Feature
                 title={entry.title}
                 description={entry.description}
