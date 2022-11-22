@@ -7,7 +7,7 @@ export default function LocationPage() {
   return (
     <>
       <Head>
-        <title>About</title>
+        <title>Locations</title>
       </Head>
       <Layout>
         <Locations />

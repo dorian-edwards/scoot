@@ -22,7 +22,7 @@ export default function MobileSideNav({ show }: MobileSideNavProps) {
         </li>
         <li>
           <Link href='/locations' onClick={unfreezeHtml}>
-            Location
+            Locations
           </Link>
         </li>
         <li>

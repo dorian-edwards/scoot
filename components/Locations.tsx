@@ -25,7 +25,7 @@ export function LocationListing({ mobile }: { mobile: boolean }) {
 
 export default function Locations() {
   const { format } = useMediaContext()
-  console.log(format)
+
   return (
     <>
       <header

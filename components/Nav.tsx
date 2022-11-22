@@ -20,7 +20,7 @@ export default function Nav() {
           </li>
           <li className='nav-link mr-8'>
             <Link className='font-space text-dim-grey' href='/locations'>
-              Location
+              Locations
             </Link>
           </li>
           <li className='nav-link mr-8'>
