@@ -14,7 +14,9 @@ export default function Feature({
   addOns,
 }: FeatureProps) {
   return (
-    <div className={`feature-wrapper ${styling} desktop:justify-between`}>
+    <div
+      className={`feature-wrapper ${styling} desktop:justify-between desktop:max-w-[1110px]`}
+    >
       <div className='image-wrapper w-[85%] max-w-[445px] rounded-full overflow-hidden mb-14 mx-auto desktop:mx-0'>
         <Image src={image} alt={alt} width={445} height={445} />
       </div>

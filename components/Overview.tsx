@@ -8,7 +8,7 @@ export default function Overview({
   alt,
 }: OverviewProps) {
   return (
-    <div className='overview-wrapper w-full px-8 tablet:flex tablet:gap-x-[79px] tablet:items-center tablet:max-w-[573px] tablet:mx-auto tablet:px-0'>
+    <div className='overview-wrapper w-full px-8 tablet:flex tablet:gap-x-[79px] tablet:items-center tablet:max-w-[573px] tablet:mx-auto tablet:px-0 desktop:flex-col desktop:items-start'>
       <Image
         className='mx-auto mb-6 tablet:mx-0'
         src={icon}
@@ -23,7 +23,7 @@ export default function Overview({
         >
           {title}
         </h2>
-        <p className='overview-description font-lexend text-dim-grey text-[15px] leading-[25px] text-center tablet:text-left'>
+        <p className='overview-description font-lexend text-dim-grey text-[15px] leading-[25px] text-center tablet:text-left desktop:max-w-[350px]'>
           {description}
         </p>
       </div>
