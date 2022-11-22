@@ -4,9 +4,12 @@ import JobCard from './JobCard'
 import ValueCard from './ValueCard'
 import SubHeading from './Typography/SubHeading'
 
+import { useMediaContext } from '../providers/MediaProvider'
+
 import data from '../public/data.json'
 
 export default function Careers() {
+  const { format } = useMediaContext()
   return (
     <>
       <header
@@ -19,36 +22,44 @@ export default function Careers() {
       <main>
         <section
           id='careers'
-          className='mb-[120px] tablet:max-w-[557px] tablet:mx-auto'
+          className='mb-[120px] tablet:max-w-[557px] desktop:max-w-[1110px] tablet:mx-auto'
         >
           <Feature
             image={data.careers.image}
             alt={data.careers.alt}
             title={data.careers.title}
             description={data.careers.description}
+            styling='desktop:flex desktop:flex-row-reverse'
+            addOns={
+              <Button text='Say hello' styling='mx-auto mt-8 desktop:mx-0' />
+            }
           />
-          <Button text='Say hello' styling='mx-auto mt-8' />
+          {format !== 'desktop' && (
+            <Button text='Say hello' styling='mx-auto mt-8' />
+          )}
         </section>
         <section
           id='why-join'
-          className='flex flex-col gap-y-16 mb-[145px] tablet:max-w-[457px] tablet:mx-auto'
+          className='flex flex-col gap-y-16 mb-[145px] tablet:max-w-[457px] tablet:mx-auto desktop:max-w-[1110px] desktop:justify-between'
         >
           <SubHeading>Why join us?</SubHeading>
-          {data.values.map((entry) => (
-            <ValueCard
-              key={entry.id}
-              id={entry.id}
-              title={entry.title}
-              description={entry.description}
-              image={entry.image}
-              alt={entry.alt}
-              number={entry.number}
-            />
-          ))}
+          <div className='values-wrapper desktop:flex'>
+            {data.values.map((entry) => (
+              <ValueCard
+                key={entry.id}
+                id={entry.id}
+                title={entry.title}
+                description={entry.description}
+                image={entry.image}
+                alt={entry.alt}
+                number={entry.number}
+              />
+            ))}
+          </div>
         </section>
         <section
           id='staff'
-          className='flex flex-col gap-y-4 px-8 mb-[120px] tablet:max-w[689px] tablet:mx-auto'
+          className='flex flex-col gap-y-4 px-8 mb-[120px] tablet:max-w-[689px] tablet:mx-auto desktop:max-w-[1110px]'
         >
           {data.positions.map((position) => (
             <JobCard

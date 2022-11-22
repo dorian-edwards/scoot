@@ -17,6 +17,8 @@ export interface FeatureProps {
   alt: string
   pattern?: string
   position?: string
+  styling?: string
+  addOns?: React.ReactElement
 }
 
 export interface HeadingProps {
