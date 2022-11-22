@@ -55,7 +55,7 @@ export default function Locations() {
           className='location-listing mb-[72px] tablet:max-w-[700px] tablet:mx-auto desktop:flex desktop:max-w-[1110px]'
         >
           <SubHeading styling='desktop:max-w-[351px] desktop:text-left desktop:text-[48px] leading-[48px] tracking-[-2.14px]'>
-            {'Your City Not Listed?'}
+            Your City Not Listed?
           </SubHeading>
           <Paragraph styling='desktop:max-w-[445px] desktop:text-left'>
             {

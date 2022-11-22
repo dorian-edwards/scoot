@@ -11,7 +11,7 @@ import Logo from './Logo'
 export default function Footer() {
   return (
     <footer className='relative'>
-      <section className='purchase-wrapper bg-dark-navy py-[88px]'>
+      <section className='purchase-wrapper bg-dark-navy py-[88px] px-10'>
         <div className='mx-auto desktop:flex desktop:justify-between max-w-[1110px]'>
           <h2 className='font-space text-[32px] text-white leading-[32px] tracking-[-1.43px] text-center mb-10 max-w-[457px] mx-auto tablet:text-[48px] tablet:leading-[48px] tablet:tracking-[-2.14px] desktop:text-left desktop:mx-0'>
             Sign up and Scoot off today
@@ -27,10 +27,10 @@ export default function Footer() {
         </div>
       </section>
 
-      <nav className='footer-nav pt-16 pb-[88px] bg-menu-bg'>
-        <div className='max-w-[1110px] mx-auto mobile:mx-auto tablet:flex tablet:justify-between'>
-          <ul className='local-nav flex flex-col items-center mobile:gap-y-4 mobile:mb-[85px] tablet:flex-row tablet:items-center tablet:gap-x-8'>
-            <li className='mobile:mb-[25px] tablet:mr-[26.58px]'>
+      <nav className='footer-nav pt-16 pb-[88px] bg-menu-bg px-10'>
+        <div className='max-w-[1110px] text-center mx-auto tablet:flex tablet:justify-between tablet:items-center'>
+          <ul className='local-nav flex flex-col items-center gap-y-4 mb-[85px] tablet:flex-row tablet:items-center tablet:gap-x-8 tablet:mb-0'>
+            <li className='mb-[25px] tablet:mr-[26.58px] tablet:mb-0'>
               <Link href='/'>
                 <Logo color='#FFF' />
               </Link>

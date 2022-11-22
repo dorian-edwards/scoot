@@ -17,7 +17,10 @@ export default function Careers() {
         </h1>
       </header>
       <main>
-        <section id='careers' className='mb-[120px]'>
+        <section
+          id='careers'
+          className='mb-[120px] tablet:max-w-[557px] tablet:mx-auto'
+        >
           <Feature
             image={data.careers.image}
             alt={data.careers.alt}
@@ -26,7 +29,10 @@ export default function Careers() {
           />
           <Button text='Say hello' styling='mx-auto mt-8' />
         </section>
-        <section id='why-join' className='flex flex-col gap-y-16 mb-[145px]'>
+        <section
+          id='why-join'
+          className='flex flex-col gap-y-16 mb-[145px] tablet:max-w-[457px] tablet:mx-auto'
+        >
           <SubHeading>Why join us?</SubHeading>
           {data.values.map((entry) => (
             <ValueCard
@@ -40,7 +46,10 @@ export default function Careers() {
             />
           ))}
         </section>
-        <section id='staff' className='flex flex-col gap-y-4 px-8 mb-[120px]'>
+        <section
+          id='staff'
+          className='flex flex-col gap-y-4 px-8 mb-[120px] tablet:max-w[689px] tablet:mx-auto'
+        >
           {data.positions.map((position) => (
             <JobCard
               key={position.id}
