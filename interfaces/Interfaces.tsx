@@ -15,7 +15,7 @@ export interface FeatureProps {
   description: string
   image: string
   alt: string
-  pattern?: string
+  pattern?: React.ReactElement
   position?: string
   styling?: string
   addOns?: React.ReactElement

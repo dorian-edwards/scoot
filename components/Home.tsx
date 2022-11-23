@@ -8,6 +8,8 @@ import PrimaryHeading from './Typography/PrimaryHeading'
 import rightArrow from '../public/assets/patterns/right-arrow.svg'
 import line from '../public/assets/patterns/line.svg'
 import whiteCircles from '../public/assets/patterns/white-circles.svg'
+import circle from '../public/assets/patterns/circle.svg'
+import leftDownwardArrow from '../public/assets/patterns/left-downward-arrow.svg'
 
 import data from '../public/data.json'
 
@@ -81,13 +83,67 @@ export default function HomePage() {
           {data['features'].map((entry, i) => (
             <div
               key={entry.id}
-              className='home-feature-wrapper w-full tablet:max-w-[573px] tablet:mx-auto desktop:max-w-[1110px]'
+              className='home-feature-wrapper w-full tablet:max-w-[573px] tablet:mx-auto desktop:max-w-[1440px] overflow-x-hidden'
             >
               <Feature
                 title={entry.title}
                 description={entry.description}
                 image={entry.image}
                 alt={entry.alt}
+                pattern={
+                  i === 0 ? (
+                    <>
+                      <Image
+                        src={circle}
+                        alt='faded white cirle'
+                        width={445}
+                        height={445}
+                        className='absolute right-[-23%]'
+                      />
+                      <Image
+                        src={leftDownwardArrow}
+                        alt='yellow arrow pointing left'
+                        width={741}
+                        height={151}
+                        className='absolute top-[50%]  right-[-3%]'
+                      />
+                    </>
+                  ) : i === 1 ? (
+                    <>
+                      <Image
+                        src={circle}
+                        alt='faded white cirle'
+                        width={445}
+                        height={445}
+                        className='absolute left-[-23%]'
+                      />
+                      <Image
+                        src={rightArrow}
+                        alt='rightward pointing yellow arrow'
+                        width={452}
+                        height={151}
+                        className='absolute top-0 left-0'
+                      />
+                    </>
+                  ) : (
+                    <>
+                      <Image
+                        src={circle}
+                        alt='faded white cirle'
+                        width={445}
+                        height={445}
+                        className='absolute right-[-23%]'
+                      />
+                      <Image
+                        src={leftDownwardArrow}
+                        alt='yellow arrow pointing left'
+                        width={741}
+                        height={151}
+                        className='absolute top-[16%]  right-[-26.25%]'
+                      />
+                    </>
+                  )
+                }
                 styling={`desktop:flex ${
                   i % 2 ? '' : 'desktop:flex-row-reverse'
                 }`}
