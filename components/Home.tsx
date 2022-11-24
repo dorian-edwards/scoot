@@ -73,10 +73,10 @@ export default function HomePage() {
           id='overview'
           className='overview flex flex-col gap-y-12 mb-[120px]'
         >
-          <div className='desktop:flex desktop:max-w-[1110px] desktop:mx-auto desktop:gap-x-[30px]'>
-            <div className='overview-section-wrapper tablet:max-w-[573px] mx-auto relative'>
-              {format === 'tablet' && (
-                <div className='tablet-band absolute h-[435px] w-[15px] bg-light-grey top-[-120px] left-[20px] -z-10' />
+          <div className=' desktop:mx-auto'>
+            <div className='desktop:flex desktop:gap-x-[30px] overview-section-wrapper desktop:max-w-[1110px] tablet:max-w-[573px] mx-auto relative'>
+              {format !== 'mobile' && (
+                <div className='tablet-band absolute tablet:h-[435px] tablet:w-[15px] bg-light-grey tablet:top-[-120px] tablet:left-[20px] desktop:h-[15px] desktop:w-[775px] desktop:top-[22px] -z-10' />
               )}
               {data['how-to'].map((entry) => (
                 <Overview
