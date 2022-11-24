@@ -17,14 +17,23 @@ export default function HomePage() {
   const { format } = useMediaContext()
   return (
     <>
-      <header className='header bg-home-mobile bg-no-repeat bg-cover bg-center min-h-[650px] tablet:bg-home-tablet desktop:bg-home-desktop pt-[115px] px-8 mb-[120px] desktop:relative desktop:overflow-x-hidden'>
-        {format === 'desktop' && (
+      <header className='header bg-home-mobile bg-no-repeat bg-cover bg-center min-h-[650px] tablet:bg-home-tablet desktop:bg-home-desktop pt-[115px] px-8 mb-[120px] tablet:relative desktop:overflow-x-hidden'>
+        {format !== 'mobile' && (
           <Image
             src={whiteCircles}
             alt='two black circles with white outline and one solid white circle in a row'
             width={234}
             height={63}
-            className='absolute right-[-30px] top-[67.69%]'
+            className='absolute right-[-30px] desktop:top-[67.69%] tablet:top-[83.32%]'
+          />
+        )}
+        {format === 'tablet' && (
+          <Image
+            src={rightArrow}
+            alt='rightward pointing yellow arrow'
+            width={452}
+            height={151}
+            className='absolute top-[71%] left-[-21%]'
           />
         )}
         <div className='tablet:max-w-[573px] tablet:mx-auto desktop:max-w-[1110px]'>
@@ -65,15 +74,20 @@ export default function HomePage() {
           className='overview flex flex-col gap-y-12 mb-[120px]'
         >
           <div className='desktop:flex desktop:max-w-[1110px] desktop:mx-auto desktop:gap-x-[30px]'>
-            {data['how-to'].map((entry) => (
-              <Overview
-                key={entry.id}
-                title={entry.title}
-                description={entry.description}
-                icon={entry.icon}
-                alt={entry.alt}
-              />
-            ))}
+            <div className='overview-section-wrapper tablet:max-w-[573px] mx-auto relative'>
+              {format === 'tablet' && (
+                <div className='tablet-band absolute h-[435px] w-[15px] bg-light-grey top-[-120px] left-[20px] -z-10' />
+              )}
+              {data['how-to'].map((entry) => (
+                <Overview
+                  key={entry.id}
+                  title={entry.title}
+                  description={entry.description}
+                  icon={entry.icon}
+                  alt={entry.alt}
+                />
+              ))}
+            </div>
           </div>
         </section>
         <section
@@ -83,7 +97,7 @@ export default function HomePage() {
           {data['features'].map((entry, i) => (
             <div
               key={entry.id}
-              className='home-feature-wrapper w-full tablet:max-w-[573px] tablet:mx-auto desktop:max-w-[1440px] overflow-x-hidden'
+              className='home-feature-wrapper w-full tablet:mx-auto desktop:max-w-[1440px] desktop:overflow-x-hidden'
             >
               <Feature
                 title={entry.title}
@@ -91,57 +105,63 @@ export default function HomePage() {
                 image={entry.image}
                 alt={entry.alt}
                 pattern={
-                  i === 0 ? (
+                  format !== 'mobile' ? (
                     <>
-                      <Image
-                        src={circle}
-                        alt='faded white cirle'
-                        width={445}
-                        height={445}
-                        className='absolute right-[-23%]'
-                      />
-                      <Image
-                        src={leftDownwardArrow}
-                        alt='yellow arrow pointing left'
-                        width={741}
-                        height={151}
-                        className='absolute top-[50%]  right-[-3%]'
-                      />
-                    </>
-                  ) : i === 1 ? (
-                    <>
-                      <Image
-                        src={circle}
-                        alt='faded white cirle'
-                        width={445}
-                        height={445}
-                        className='absolute left-[-23%]'
-                      />
-                      <Image
-                        src={rightArrow}
-                        alt='rightward pointing yellow arrow'
-                        width={452}
-                        height={151}
-                        className='absolute top-0 left-0'
-                      />
+                      {i === 0 ? (
+                        <>
+                          <Image
+                            src={circle}
+                            alt='faded white cirle'
+                            width={445}
+                            height={445}
+                            className='absolute right-[-350px]'
+                          />
+                          <Image
+                            src={leftDownwardArrow}
+                            alt='yellow arrow pointing left'
+                            width={741}
+                            height={151}
+                            className='absolute desktop:top-[50%] desktop:right-[-3%] tablet:top-[298px] tablet:right-0'
+                          />
+                        </>
+                      ) : i === 1 ? (
+                        <>
+                          <Image
+                            src={circle}
+                            alt='faded white cirle'
+                            width={445}
+                            height={445}
+                            className='absolute desktop:left-[-23%] tablet:left-[-350px]'
+                          />
+                          <Image
+                            src={rightArrow}
+                            alt='rightward pointing yellow arrow'
+                            width={452}
+                            height={151}
+                            className='absolute top-0 desktop:left-0 tablet:left-[-100px]'
+                          />
+                        </>
+                      ) : (
+                        <>
+                          <Image
+                            src={circle}
+                            alt='faded white cirle'
+                            width={445}
+                            height={445}
+                            className='absolute desktop:right-[-23%] tablet:right-[-350px]'
+                          />
+                          <Image
+                            src={leftDownwardArrow}
+                            alt='yellow arrow pointing left'
+                            width={741}
+                            height={151}
+                            className='absolute desktop:top-[16%]  desktop:right-[-26.25%] tablet:top-[10%] tablet:right-[-386px]'
+                          />
+                        </>
+                      )}
                     </>
                   ) : (
-                    <>
-                      <Image
-                        src={circle}
-                        alt='faded white cirle'
-                        width={445}
-                        height={445}
-                        className='absolute right-[-23%]'
-                      />
-                      <Image
-                        src={leftDownwardArrow}
-                        alt='yellow arrow pointing left'
-                        width={741}
-                        height={151}
-                        className='absolute top-[16%]  right-[-26.25%]'
-                      />
-                    </>
+                    <></>
                   )
                 }
                 styling={`desktop:flex ${
@@ -154,7 +174,7 @@ export default function HomePage() {
                   />
                 }
               />
-              {format !== 'desktop' && (
+              {format === 'mobile' && (
                 <Button
                   text='Learn more'
                   type='button'
