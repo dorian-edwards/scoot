@@ -1,12 +1,20 @@
+import Image from 'next/image'
 import data from '../public/data.json'
 
 import ValueCard from './ValueCard'
 import FaqDropdown from './FaqDropdown'
 import SubHeading from './Typography/SubHeading'
-import Banner from './Banner'
 import Feature from './Feature'
+import { useMediaContext } from '../providers/MediaProvider'
+
+import rightArrow from '../public/assets/patterns/right-arrow.svg'
+import line from '../public/assets/patterns/line.svg'
+import whiteCircles from '../public/assets/patterns/white-circles.svg'
+import circle from '../public/assets/patterns/circle.svg'
+import leftDownwardArrow from '../public/assets/patterns/left-downward-arrow.svg'
 
 export default function About() {
+  const { format } = useMediaContext()
   return (
     <>
       <header
@@ -19,19 +27,67 @@ export default function About() {
       <main>
         <section
           id='about'
-          className='about-card-wrapper flex flex-col gap-y-[120px] mb-[120px] tablet:max-w-[557px] tablet:mx-auto desktop:max-w-[1110px]'
+          className='about-card-wrapper flex flex-col gap-y-[120px] mb-[120px] w-full tablet:mx-auto desktop:max-w-[1440px]'
         >
           {data['about-cards'].map((entry, i) => (
-            <Feature
+            <div
               key={entry.id}
-              title={entry.title}
-              description={entry.description}
-              image={entry.image}
-              alt={entry.alt}
-              styling={`desktop:flex ${
-                i % 2 ? '' : 'desktop:flex-row-reverse'
-              }`}
-            />
+              className='home-feature-wrapper w-full tablet:mx-auto desktop:max-w-[1440px] desktop:overflow-x-hidden'
+            >
+              <Feature
+                key={entry.id}
+                title={entry.title}
+                description={entry.description}
+                image={entry.image}
+                alt={entry.alt}
+                pattern={
+                  format !== 'mobile' ? (
+                    <>
+                      {i === 0 ? (
+                        <>
+                          <Image
+                            src={circle}
+                            alt='faded white cirle'
+                            width={445}
+                            height={445}
+                            className='absolute right-[-350px]'
+                          />
+                          <Image
+                            src={leftDownwardArrow}
+                            alt='yellow arrow pointing left'
+                            width={741}
+                            height={151}
+                            className='absolute desktop:top-[50%] desktop:right-[-3%] tablet:top-[298px] tablet:right-0'
+                          />
+                        </>
+                      ) : (
+                        <>
+                          <Image
+                            src={circle}
+                            alt='faded white cirle'
+                            width={445}
+                            height={445}
+                            className='absolute desktop:left-[-23%] tablet:left-[-350px]'
+                          />
+                          <Image
+                            src={rightArrow}
+                            alt='rightward pointing yellow arrow'
+                            width={452}
+                            height={151}
+                            className='absolute top-0 desktop:left-0 tablet:left-[-100px]'
+                          />
+                        </>
+                      )}
+                    </>
+                  ) : (
+                    <></>
+                  )
+                }
+                styling={`desktop:flex ${
+                  i % 2 ? '' : 'desktop:flex-row-reverse'
+                }`}
+              />
+            </div>
           ))}
         </section>
         <section
