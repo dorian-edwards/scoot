@@ -74,9 +74,9 @@ export default function HomePage() {
           className='overview flex flex-col gap-y-12 mb-[120px]'
         >
           <div className=' desktop:mx-auto'>
-            <div className='desktop:flex desktop:gap-x-[30px] overview-section-wrapper desktop:max-w-[1110px] tablet:max-w-[573px] mx-auto relative'>
+            <div className='flex flex-col desktop:gap-x-[30px] overview-section-wrapper desktop:max-w-[1110px] desktop:flex-row tablet:max-w-[573px] tablet:gap-y-10 mx-auto relative gap-y-12'>
               {format !== 'mobile' && (
-                <div className='tablet-band absolute tablet:h-[435px] tablet:w-[15px] bg-light-grey tablet:top-[-120px] tablet:left-[20px] desktop:h-[15px] desktop:w-[775px] desktop:top-[22px] -z-10' />
+                <div className='tablet-band absolute tablet:h-[490px] tablet:w-[15px] bg-light-grey tablet:top-[-120px] tablet:left-[22px] desktop:h-[15px] desktop:w-[775px] desktop:top-[22px] -z-10' />
               )}
               {data['how-to'].map((entry) => (
                 <Overview
@@ -174,13 +174,6 @@ export default function HomePage() {
                   />
                 }
               />
-              {format === 'mobile' && (
-                <Button
-                  text='Learn more'
-                  type='button'
-                  styling='mx-auto mt-8'
-                />
-              )}
             </div>
           ))}
         </section>
