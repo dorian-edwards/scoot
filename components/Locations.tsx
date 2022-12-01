@@ -4,29 +4,12 @@ import { useMediaContext } from '../providers/MediaProvider'
 
 import Banner from './Banner'
 import Button from './Button'
-import LocationButton from './LocationButton'
+import { LocationListing } from './LocationListing'
 import Paragraph from './Typography/Paragraph'
 import SubHeading from './Typography/SubHeading'
 
-import data from '../public/data.json'
-
 import mobileMap from '../public/assets/images/world-map-mobile.png'
 import worldMap from '../public/assets/images/worldmap.png'
-
-export function LocationListing({ mobile }: { mobile: boolean }) {
-  return (
-    <section id='locations' className='flex flex-col gap-y-4 mb-[72px]'>
-      {data.locations.map((location) => (
-        <LocationButton
-          key={location.id}
-          text={location.city}
-          styling={mobile ? '' : 'absolute'}
-          position={location.position}
-        />
-      ))}
-    </section>
-  )
-}
 
 export default function Locations() {
   const { format } = useMediaContext()
