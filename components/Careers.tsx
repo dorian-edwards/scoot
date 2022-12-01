@@ -18,13 +18,6 @@ export default function Careers() {
   const { format } = useMediaContext()
   return (
     <>
-      {/* <header
-        className={`bg-careers-location-mobile tablet:bg-careers-location-tablet desktop:bg-careers-location-desktop mb-[72px] px-10`}
-      >
-        <h1 className='font-space text-[40px] text-center tablet:text-left max-w-[1100px] mx-auto text-white leading-10 tracking-[-1.79px] py-[60px] tablet:py-[72px] '>
-          Careers
-        </h1>
-      </header> */}
       <Banner text='Careers' bgImage='careers-location' />
       <main>
         <section

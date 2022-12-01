@@ -1,10 +1,15 @@
 import Image from 'next/image'
+
+import { useMediaContext } from '../providers/MediaProvider'
+
+import Banner from './Banner'
 import Button from './Button'
 import LocationButton from './LocationButton'
-import { useMediaContext } from '../providers/MediaProvider'
 import Paragraph from './Typography/Paragraph'
 import SubHeading from './Typography/SubHeading'
+
 import data from '../public/data.json'
+
 import mobileMap from '../public/assets/images/world-map-mobile.png'
 import worldMap from '../public/assets/images/worldmap.png'
 
@@ -28,13 +33,7 @@ export default function Locations() {
 
   return (
     <>
-      <header
-        className={`bg-careers-location-mobile tablet:bg-careers-location-tablet desktop:bg-careers-location-desktop mb-[72px] px-10`}
-      >
-        <h1 className='font-space text-[40px] text-center tablet:text-left max-w-[1100px] mx-auto text-white leading-10 tracking-[-1.79px] py-[60px] tablet:py-[72px] '>
-          Locations
-        </h1>
-      </header>
+      <Banner text='Locations' bgImage='careers-location' />
 
       <section id='map' className='mb-[72px]'>
         <div className='map-wrapper mx-auto relative max-w-[1110px]'>

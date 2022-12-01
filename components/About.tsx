@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import data from '../public/data.json'
 
+import Banner from './Banner'
 import ValueCard from './ValueCard'
 import FaqDropdown from './FaqDropdown'
 import SubHeading from './Typography/SubHeading'
@@ -15,13 +16,7 @@ export default function About() {
   const { format } = useMediaContext()
   return (
     <>
-      <header
-        className={`bg-about-mobile tablet:bg-about-tablet desktop:bg-about-desktop mb-[72px] px-10`}
-      >
-        <h1 className='font-space text-[40px] text-center tablet:text-left max-w-[1100px] mx-auto text-white leading-10 tracking-[-1.79px] py-[60px] tablet:py-[72px] '>
-          About
-        </h1>
-      </header>
+      <Banner text='About' bgImage='about' />
       <main>
         <section
           id='about'
