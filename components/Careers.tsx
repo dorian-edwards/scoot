@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+import Banner from './Banner'
 import Button from './Button'
 import Feature from './Feature'
 import JobCard from './JobCard'
@@ -8,7 +9,6 @@ import SubHeading from './Typography/SubHeading'
 
 import { useMediaContext } from '../providers/MediaProvider'
 
-import rightArrow from '../public/assets/patterns/right-arrow.svg'
 import circle from '../public/assets/patterns/circle.svg'
 import leftDownwardArrow from '../public/assets/patterns/left-downward-arrow.svg'
 
@@ -18,13 +18,14 @@ export default function Careers() {
   const { format } = useMediaContext()
   return (
     <>
-      <header
+      {/* <header
         className={`bg-careers-location-mobile tablet:bg-careers-location-tablet desktop:bg-careers-location-desktop mb-[72px] px-10`}
       >
         <h1 className='font-space text-[40px] text-center tablet:text-left max-w-[1100px] mx-auto text-white leading-10 tracking-[-1.79px] py-[60px] tablet:py-[72px] '>
           Careers
         </h1>
-      </header>
+      </header> */}
+      <Banner text='Careers' bgImage='careers-location' />
       <main>
         <section
           id='careers'
