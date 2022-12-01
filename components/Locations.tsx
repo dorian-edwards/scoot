@@ -6,7 +6,7 @@ import Banner from './Banner'
 import Button from './Button'
 import { LocationListing } from './LocationListing'
 import Paragraph from './Typography/Paragraph'
-import SubHeading from './Typography/SubHeading'
+import SubHeading from './Typography/Subheading'
 
 import mobileMap from '../public/assets/images/world-map-mobile.png'
 import worldMap from '../public/assets/images/worldmap.png'

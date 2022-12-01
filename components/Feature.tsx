@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { FeatureProps } from '../interfaces/Interfaces'
 import Paragraph from './Typography/Paragraph'
-import SubHeading from './Typography/SubHeading'
+import SubHeading from './Typography/Subheading'
 
 export default function Feature({
   title,

@@ -5,7 +5,7 @@ import Button from './Button'
 import Feature from './Feature'
 import JobCard from './JobCard'
 import ValueCard from './ValueCard'
-import SubHeading from './Typography/SubHeading'
+import SubHeading from './Typography/Subheading'
 
 import { useMediaContext } from '../providers/MediaProvider'
 

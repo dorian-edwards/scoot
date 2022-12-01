@@ -4,7 +4,7 @@ import data from '../public/data.json'
 import Banner from './Banner'
 import ValueCard from './ValueCard'
 import FaqDropdown from './FaqDropdown'
-import SubHeading from './Typography/SubHeading'
+import SubHeading from './Typography/Subheading'
 import Feature from './Feature'
 import { useMediaContext } from '../providers/MediaProvider'
 
