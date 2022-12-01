@@ -89,7 +89,7 @@ export default function About() {
           className='flex flex-col gap-y-16 mb-[145px] tablet:max-w-[457px] tablet:mx-auto desktop:max-w-[1110px] desktop:justify-between'
         >
           <SubHeading styling='mb-16'>Our values</SubHeading>
-          <div className='values-wrapper desktop:flex'>
+          <div className='values-wrapper flex flex-col gap-y-[55px] desktop:flex-row'>
             {data.values.map((entry) => (
               <ValueCard
                 key={entry.id}
