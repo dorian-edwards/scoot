@@ -8,8 +8,6 @@ import Feature from './Feature'
 import { useMediaContext } from '../providers/MediaProvider'
 
 import rightArrow from '../public/assets/patterns/right-arrow.svg'
-import line from '../public/assets/patterns/line.svg'
-import whiteCircles from '../public/assets/patterns/white-circles.svg'
 import circle from '../public/assets/patterns/circle.svg'
 import leftDownwardArrow from '../public/assets/patterns/left-downward-arrow.svg'
 
@@ -90,6 +88,7 @@ export default function About() {
             </div>
           ))}
         </section>
+
         <section
           id='values'
           className='flex flex-col gap-y-16 mb-[145px] tablet:max-w-[457px] tablet:mx-auto desktop:max-w-[1110px] desktop:justify-between'
@@ -109,6 +108,7 @@ export default function About() {
             ))}
           </div>
         </section>
+
         <section
           id='faqs'
           className='tablet:max-w-[689px] tablet:mx-auto desktop:max-w-[1110px] desktop:mb-[160px]'
