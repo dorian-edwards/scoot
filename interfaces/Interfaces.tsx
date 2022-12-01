@@ -42,3 +42,8 @@ export interface OverviewProps {
   icon: string
   alt: string
 }
+
+export interface SubHeadingProps {
+  children: string
+  styling?: string
+}

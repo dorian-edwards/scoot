@@ -1,7 +1,4 @@
-export interface SubHeadingProps {
-  children: string
-  styling?: string
-}
+import { SubHeadingProps } from '../../interfaces/Interfaces'
 
 export default function SubHeading({ children, styling }: SubHeadingProps) {
   return (
