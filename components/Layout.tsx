@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
 import Nav from './Nav'

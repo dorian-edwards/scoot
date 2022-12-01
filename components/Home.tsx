@@ -45,7 +45,7 @@ export default function HomePage() {
             in convenient locations in each of our cities. Use our app to locate
             the nearest bike, unlock it with a tap, and you’re away!
             {format === 'desktop' && (
-              <div className='arrow-pattern-wrapper'>
+              <span className='arrow-pattern-wrapper block'>
                 <Image
                   src={rightArrow}
                   alt='rightward pointing yellow arrow'
@@ -60,7 +60,7 @@ export default function HomePage() {
                   height={15}
                   className='absolute left-[-298px] top-[54.46%]'
                 />
-              </div>
+              </span>
             )}
           </p>
           <div className='button-wrapper flex justify-center desktop:justify-start desktop:ml-[95px]'>
