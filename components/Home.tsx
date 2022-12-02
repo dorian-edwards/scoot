@@ -24,7 +24,7 @@ export default function HomePage() {
             alt='two black circles with white outline and one solid white circle in a row'
             width={234}
             height={63}
-            className='absolute right-[-30px] desktop:top-[67.69%] tablet:top-[83.32%]'
+            className='absolute right-[-30px] desktop:top-[385px] tablet:top-[83.32%]'
           />
         )}
         {format === 'tablet' && (
