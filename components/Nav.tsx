@@ -5,7 +5,10 @@ import Button from './Button'
 
 export default function Nav() {
   return (
-    <nav className='flex px-10 h-24 items-center justify-center bg-white z-50 sticky top-0'>
+    <nav
+      id='main-nav'
+      className='flex px-10 h-24 items-center justify-center bg-white z-50 sticky top-0'
+    >
       <div className='container max-w-[1110px] flex justify-between'>
         <ul className='desktop-nav flex items-center'>
           <li className='nav-link mr-[58.18px] flex-shrink-0'>

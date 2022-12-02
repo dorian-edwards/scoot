@@ -17,10 +17,7 @@ export default function Overview({
         width={56}
       />
       <div className='text-wrapper tablet:max-w-[398px]'>
-        <h2
-          id='locate'
-          className='overview-title font-space text-center tablet:text-left text-dark-navy text-[20px] leading-[28px] tracking-[-0.89px] mb-6'
-        >
+        <h2 className='overview-title font-space text-center tablet:text-left text-dark-navy text-[20px] leading-[28px] tracking-[-0.89px] mb-6'>
           {title}
         </h2>
         <p className='overview-description font-lexend text-dim-grey text-[15px] leading-[25px] text-center tablet:text-left desktop:max-w-[350px]'>
