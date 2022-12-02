@@ -16,7 +16,12 @@ export default function Locations() {
 
   return (
     <>
-      <Banner text='Locations' bgImage='careers-location' />
+      <Banner
+        text='Locations'
+        mobileImage='bg-careers-location-mobile'
+        tabletImage='bg-careers-location-tablet'
+        desktopImage='bg-careers-location-desktop'
+      />
 
       <section id='map' className='mb-[72px]'>
         <div className='map-wrapper mx-auto relative max-w-[1110px]'>

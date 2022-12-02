@@ -16,7 +16,12 @@ export default function About() {
   const { format } = useMediaContext()
   return (
     <>
-      <Banner text='About' bgImage='about' />
+      <Banner
+        text='About'
+        mobileImage='bg-about-mobile'
+        tabletImage='bg-about-tablet'
+        desktopImage='bg-about-desktop'
+      />
       <main>
         <section
           id='about'

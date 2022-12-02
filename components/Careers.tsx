@@ -18,7 +18,12 @@ export default function Careers() {
   const { format } = useMediaContext()
   return (
     <>
-      <Banner text='Careers' bgImage='careers-location' />
+      <Banner
+        text='Careers'
+        mobileImage='bg-careers-location-mobile'
+        tabletImage='bg-careers-location-tablet'
+        desktopImage='bg-careers-location-desktop'
+      />
       <main>
         <section
           id='careers'

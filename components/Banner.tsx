@@ -3,11 +3,17 @@ import { BannerProps } from '../interfaces/Interfaces'
 import { useMediaContext } from '../providers/MediaProvider'
 import whiteCircles from '../public/assets/patterns/white-circles.svg'
 
-export default function Banner({ text, bgImage, styling }: BannerProps) {
+export default function Banner({
+  text,
+  mobileImage,
+  tabletImage,
+  desktopImage,
+  styling,
+}: BannerProps) {
   const { format } = useMediaContext()
   return (
     <header
-      className={`bg-${bgImage}-mobile tablet:bg-${bgImage}-tablet desktop:bg-${bgImage}-desktop bg-no-repeat bg-cover mb-[72px] px-10 relative flex justify-start`}
+      className={`${mobileImage} tablet:${tabletImage} desktop:${desktopImage} bg-no-repeat bg-cover mb-[72px] px-10 relative flex justify-start`}
     >
       {format !== 'mobile' && (
         <Image

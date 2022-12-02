@@ -1,6 +1,8 @@
 export interface BannerProps {
   text: string
-  bgImage: string
+  mobileImage: string
+  tabletImage: string
+  desktopImage: string
   styling?: string
 }
 
